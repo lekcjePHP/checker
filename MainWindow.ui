@@ -65,6 +65,16 @@
       </widget>
      </item>
      <item>
+      <widget class="QLineEdit" name="lineEditSearch"/>
+     </item>
+     <item>
+      <widget class="QLabel" name="labelSearch">
+       <property name="text">
+        <string>Szukane slowo</string>
+       </property>
+      </widget>
+     </item>
+     <item>
       <widget class="QPushButton" name="pushButtonStart">
        <property name="text">
         <string>Start</string>

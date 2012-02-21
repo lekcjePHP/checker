@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'MainWindow.ui'
 #
-# Created: Tue Feb 14 18:48:09 2012
+# Created: Tue Feb 21 15:24:50 2012
 #      by: PyQt4 UI code generator 4.9.1
 #
 # WARNING! All changes made in this file will be lost!
@@ -50,6 +50,12 @@ class Ui_MainWindow(object):
         self.labelAdres = QtGui.QLabel(self.verticalLayoutWidget)
         self.labelAdres.setObjectName(_fromUtf8("labelAdres"))
         self.verticalLayout.addWidget(self.labelAdres)
+        self.lineEditSearch = QtGui.QLineEdit(self.verticalLayoutWidget)
+        self.lineEditSearch.setObjectName(_fromUtf8("lineEditSearch"))
+        self.verticalLayout.addWidget(self.lineEditSearch)
+        self.labelSearch = QtGui.QLabel(self.verticalLayoutWidget)
+        self.labelSearch.setObjectName(_fromUtf8("labelSearch"))
+        self.verticalLayout.addWidget(self.labelSearch)
         self.pushButtonStart = QtGui.QPushButton(self.verticalLayoutWidget)
         self.pushButtonStart.setObjectName(_fromUtf8("pushButtonStart"))
         self.verticalLayout.addWidget(self.pushButtonStart)
@@ -71,5 +77,6 @@ class Ui_MainWindow(object):
         self.labelPassword.setText(QtGui.QApplication.translate("MainWindow", "Haslo gmail", None, QtGui.QApplication.UnicodeUTF8))
         self.labelEmail.setText(QtGui.QApplication.translate("MainWindow", "destination email", None, QtGui.QApplication.UnicodeUTF8))
         self.labelAdres.setText(QtGui.QApplication.translate("MainWindow", "adrs monitorowanej strony", None, QtGui.QApplication.UnicodeUTF8))
+        self.labelSearch.setText(QtGui.QApplication.translate("MainWindow", "Szukane slowo", None, QtGui.QApplication.UnicodeUTF8))
         self.pushButtonStart.setText(QtGui.QApplication.translate("MainWindow", "Start", None, QtGui.QApplication.UnicodeUTF8))
 

@@ -11,13 +11,14 @@ def wyslij_mail(toaddrs,msg, username, password):
         server.sendmail(sourceAddress, toaddrs, msg)  
         server.quit()
 
-def watcher(pageAddress, toaddrs,msg, username, password):
-        strona = requests.get(pageAddress)
-        startSize = len(strona.text)
+def watcher(pageAddress, toaddrs,msg, username, password, szukanaFraza):
+
+
         while True:
                strona = requests.get(pageAddress)
-               actualSize = len(stronaText)
+               tekstStrony = strona.text
+
                time.sleep(10)
-               if actualSize != startSize:
+               if szukanaFraza in tekstStrony:
                      wyslij_mail(toaddrs, msg, username, password )
                      return 1
